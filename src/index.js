@@ -5,7 +5,7 @@ const   btn = document.querySelector("#button"),
 
 btn.addEventListener("click", function() {
     author.innerHTML = "Author: Alena Dmitrievskaia";
-    src.innerHTML = "Address for check: ";
+    src.innerHTML = "Address for check for: ";
 
     let url = window.location.href.replace(/^.*?\?/, '').replace(/#.*$/, '').split('&');
 
