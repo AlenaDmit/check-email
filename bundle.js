@@ -9,5 +9,5 @@ btn.addEventListener("click", function () {
 
     let url = window.location.href.replace(/^.*?\?/, '').replace(/#.*$/, '').split('&');
 
-    /^([a-z]{3,})@(yandex\.ru)$/.test(url) ? res.innerHTML = "yes" : res.innerHTML = "no";
+    /^((test=)[a-z]{3,})@(yandex\.ru)$/.test(url[0]) ? res.innerHTML = "yes" : res.innerHTML = "no";
 });
